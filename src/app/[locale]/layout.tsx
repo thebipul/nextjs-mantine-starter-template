@@ -1,4 +1,3 @@
-import "./globals.css";
 import "@mantine/core/styles.css";
 import { type Locale, routing } from "@/i18n/routing";
 import {
