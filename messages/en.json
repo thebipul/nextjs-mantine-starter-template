@@ -1,0 +1,10 @@
+{
+  "general": {
+    "title": "Nextjs Mantine Template",
+    "description": "This is a starter template who is wondering on using Nextjs with Mantine and other tools for the first setup."
+  },
+  "notFound": {
+    "title": "404 Not Found",
+    "description": "The page you are looking for is not found."
+  }
+}

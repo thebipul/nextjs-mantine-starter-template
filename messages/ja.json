@@ -1,0 +1,10 @@
+{
+  "general": {
+    "title": "Nextjs Mantine テンプレート",
+    "description": "これは、NextjsをMantineと他のツールと組み合わせて初めてセットアップする人のためのスターターテンプレートです。"
+  },
+  "notFound": {
+    "title": "404 Not Found",
+    "description": "お探しのページが見つかりません。"
+  }
+}
