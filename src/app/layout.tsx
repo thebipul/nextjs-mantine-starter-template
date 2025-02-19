@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import "./globals.css";
-import { ColorSchemeScript, MantineProvider } from "@mantine/core";
+import { ColorSchemeScript } from "@mantine/core";
+import RootProvider from "./_layout/RootProvider";
 
 export default function RootLayout({
   children,
@@ -13,7 +14,7 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
       <body>
-        <MantineProvider>{children}</MantineProvider>
+        <RootProvider>{children}</RootProvider>
       </body>
     </html>
   );
