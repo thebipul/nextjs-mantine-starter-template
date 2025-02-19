@@ -1,10 +1,5 @@
 import "@mantine/core/styles.css";
 import { type Locale, routing } from "@/i18n/routing";
-import {
-  ColorSchemeScript,
-  MantineProvider,
-  mantineHtmlProps,
-} from "@mantine/core";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
@@ -35,14 +30,5 @@ export default async function LocaleLayout({ params, children }: Props) {
   }
 
   setRequestLocale(locale);
-  return (
-    <html lang={locale} {...mantineHtmlProps}>
-      <head>
-        <ColorSchemeScript />
-      </head>
-      <body>
-        <MantineProvider>{children}</MantineProvider>
-      </body>
-    </html>
-  );
+  return children;
 }
