@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import "./globals.css";
 import { ColorSchemeScript } from "@mantine/core";
+import { PublicEnvScript } from "next-runtime-env";
 import RootProvider from "./_layout/RootProvider";
 
 export default function RootLayout({
@@ -12,6 +13,7 @@ export default function RootLayout({
     <html lang={locale} suppressHydrationWarning>
       <head>
         <ColorSchemeScript />
+        <PublicEnvScript />
       </head>
       <body>
         <RootProvider>{children}</RootProvider>
